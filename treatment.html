@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .phobia_pic {
+            width: auto;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-light p-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M511.8 287.6H576V240L288.4 0 0 240v47.6H64.1V512H224V352H352V512H512.8l-1-224.4z"/></svg></a>
@@ -29,7 +37,11 @@
             </div>
         </div>
     </nav>
+
+    <!-- MAIN CONTENT -->
     <div class="container">
+
+        <!-- TREATMENT -->
         <h1 class="text-center">TREATMENT</h1>
         <div class="row text-center">
             <div class="col-lg-3 col-md-6">
@@ -69,10 +81,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- SPECIFIC PHOBIA -->
         <div class="card text-center border-0">
             <lottie-player class="card-img-top d-block mx-auto" src="https://assets6.lottiefiles.com/packages/lf20_1ef7g2lw.json"  background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop autoplay></lottie-player>            <div class="card-body">
                 <h1 class="card-title">SPECIFIC PHOBIA</h1>
                 <p class="card-text">Phobia of a specific object or situation.</p>
+                <!-- NAV -->
                 <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="pills-natural-tab" data-bs-toggle="pill" data-bs-target="#pills-natural" type="button" role="tab" aria-controls="pills-natural" aria-selected="true">Natural Environment</button>
@@ -87,12 +102,14 @@
                       <button class="nav-link" id="pills-situation-tab" data-bs-toggle="pill" data-bs-target="#pills-situation" type="button" role="tab" aria-controls="pills-situation" aria-selected="false">Situations</button>
                     </li>
                 </ul>
+                <!-- DIFFERENT PHOBIAS -->
                 <div class="tab-content" id="pills-tabContent">
+                    <!-- NATURAL PHOBIA -->
                     <div class="tab-pane fade show active" id="pills-natural" role="tabpanel" aria-labelledby="pills-natural-tab" tabindex="0">
                         <div class="card mb-3 border-0">
                             <div class="row g-0">
                               <div class="col-lg-4">
-                                <img src="images\flame-sad-mood.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images\flame-sad-mood.png" class="img-fluid rounded-start phobia_pic" alt="...">
                               </div>
                               <div class="col-lg-8 m-auto">
                                 <div class="card-body">
@@ -105,7 +122,7 @@
                         <div class="card mb-3 border-0">
                             <div class="row g-0">
                               <div class="col-lg-4">
-                                <img src="images\flame-613.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images\flame-613.png" class="img-fluid rounded-start phobia_pic" alt="...">
                               </div>
                               <div class="col-lg-8 m-auto">
                                 <div class="card-body">
@@ -118,7 +135,7 @@
                         <div class="card mb-3 border-0">
                             <div class="row g-0">
                               <div class="col-lg-4">
-                                <img src="images\scandi-505.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images\scandi-505.png" class="img-fluid rounded-start phobia_pic" alt="...">
                               </div>
                               <div class="col-lg-8 m-auto">
                                 <div class="card-body">
@@ -129,11 +146,12 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ANIMAL PHOBIA -->
                     <div class="tab-pane fade" id="pills-animals" role="tabpanel" aria-labelledby="pills-animals-tab" tabindex="0">
                         <div class="card mb-3 border-0">
                             <div class="row g-0">
                               <div class="col-lg-4">
-                                <img src="images\flamenco-62.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images\flamenco-62.png" class="img-fluid rounded-start phobia_pic" alt="...">
                               </div>
                               <div class="col-lg-8 m-auto">
                                 <div class="card-body">
@@ -146,7 +164,7 @@
                         <div class="card mb-3 border-0">
                             <div class="row g-0">
                               <div class="col-lg-4">
-                                <img src="images\woolly-corgi.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images\woolly-corgi.png" class="img-fluid rounded-start phobia_pic" alt="...">
                               </div>
                               <div class="col-lg-8 m-auto">
                                 <div class="card-body">
@@ -159,7 +177,7 @@
                         <div class="card mb-3 border-0">
                             <div class="row g-0">
                               <div class="col-lg-4">
-                                <img src="images\abstract-1304.png" class="img-fluid rounded-start" alt="...">
+                                <img src="images\abstract-1304.png" class="img-fluid rounded-start phobia_pic" alt="...">
                               </div>
                               <div class="col-lg-8 m-auto">
                                 <div class="card-body">
@@ -167,25 +185,94 @@
                                   <p class="card-text">People who have equinophobia have an extreme fear of horses. They may also be afraid of ponies, donkeys and mules. </p>
                                 </div>
                               </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-medical" role="tabpanel" aria-labelledby="pills-medical-tab" tabindex="0"></div>
-                    <div class="tab-pane fade" id="pills-situation" role="tabpanel" aria-labelledby="pills-situation-tab" tabindex="0">...</div>
+                    <!-- MEDICAL PHOBIA -->
+                    <div class="tab-pane fade" id="pills-medical" role="tabpanel" aria-labelledby="pills-medical-tab" tabindex="0">
+                        <div class="card mb-3 border-0">
+                            <div class="row g-0">
+                              <div class="col-lg-4">
+                                <img src="images\clip-syringe.png" class="img-fluid rounded-start phobia_pic" alt="...">
+                              </div>
+                              <div class="col-lg-8 m-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title pb-4">Trypanophobia</h5>
+                                  <p class="card-text">Trypanophobia is the extreme fear of needles. Specifically, people with this phobia feel afraid of getting injections or blood draws. People with intense needle phobia may delay or avoid necessary medical care.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0">
+                            <div class="row g-0">
+                              <div class="col-lg-4">
+                                <img src="images\burgundy-tooth-2.png" class="img-fluid rounded-start phobia_pic" alt="...">
+                              </div>
+                              <div class="col-lg-8 m-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title pb-4">Dentophobia</h5>
+                                  <p class="card-text">Dentophobia is a fear of the dentist. People with this specific phobia feel anxious when they think about going to the dentist or actually visit the dentist. Past negative experiences, family history or feeling a loss of control can lead to dentophobia.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0">
+                            <div class="row g-0">
+                              <div class="col-lg-4">
+                                <img src="images\crayon-1043.png" class="img-fluid rounded-start phobia_pic" alt="...">
+                              </div>
+                              <div class="col-lg-8 m-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title pb-4">Hemophobia</h5>
+                                  <p class="card-text">Hemophobia is an abnormal and persistent fear of blood. It is a subtype of blood, injury, and injection phobia. When a person has this phobia, they dread the sight of blood. This fear often includes their own blood, another person or animal’s, or even an image of blood.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SITUATION PHOBIA -->
+                    <div class="tab-pane fade" id="pills-situation" role="tabpanel" aria-labelledby="pills-situation-tab" tabindex="0">
+                        <div class="card mb-3 border-0">
+                            <div class="row g-0">
+                              <div class="col-lg-4">
+                                <img src="images\bonbon-yellow-box.png" class="img-fluid rounded-start phobia_pic" alt="...">
+                              </div>
+                              <div class="col-lg-8 m-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title pb-4">Claustrophobia</h5>
+                                  <p class="card-text">Claustrophobia is the irrational fear of confined spaces. People affected by claustrophobia will often go out of their way to avoid confined spaces, such as lifts, tunnels, tube trains and public toilets.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0">
+                            <div class="row g-0">
+                              <div class="col-lg-4">
+                                <img src="images\bubble-gum-airplane.png" class="img-fluid rounded-start phobia_pic" alt="...">
+                              </div>
+                              <div class="col-lg-8 m-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title pb-4">Aerophobia</h5>
+                                  <p class="card-text">Aerophobia is an extreme fear of flying. People with aerophobia might feel intense anxiety before or during a flight. This condition can interfere with your ability to travel for work or pleasure.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border-0">
+                            <div class="row g-0">
+                              <div class="col-lg-4">
+                                <img src="images\clip-politician-1.png" class="img-fluid rounded-start phobia_pic" alt="...">
+                              </div>
+                              <div class="col-lg-8 m-auto">
+                                <div class="card-body">
+                                  <h5 class="card-title pb-4">Glossophobia</h5>
+                                  <p class="card-text">Glossophobia or speech anxiety is the fear of public speaking.</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- <div class="d-flex align-items-start">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-natural-tab" data-bs-toggle="pill" data-bs-target="#v-pills-natural" type="button" role="tab" aria-controls="v-pills-natural" aria-selected="true">Natural Environment</button>
-                    <button class="nav-link" id="v-pills-animal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-animal" type="button" role="tab" aria-controls="v-pills-animal" aria-selected="false">Animals</button>
-                    <button class="nav-link" id="v-pills-medical-tab" data-bs-toggle="pill" data-bs-target="#v-pills-medical" type="button" role="tab" aria-controls="v-pills-medical" aria-selected="false">Medical Treatment</button>
-                    <button class="nav-link" id="v-pills-situation-tab" data-bs-toggle="pill" data-bs-target="#v-pills-situation" type="button" role="tab" aria-controls="v-pills-situation" aria-selected="false">Situations</button>
-                    </div>
-                    <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-natural" role="tabpanel" aria-labelledby="v-pills-natural-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="v-pills-animal" role="tabpanel" aria-labelledby="v-pills-animal-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="v-pills-medical" role="tabpanel" aria-labelledby="v-pills-medical-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="v-pills-situation" role="tabpanel" aria-labelledby="v-pills-situation-tab" tabindex="0">...</div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
